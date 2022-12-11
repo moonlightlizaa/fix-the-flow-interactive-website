@@ -1,0 +1,919 @@
+:root {
+  --vtDarkBlue: #090940;
+  --vtButton: #de563b;
+  --mainBackground: #ffffff;
+
+  --vtPrimaryFont: "rigid-square", sans-serif;
+  --vtSecondaryFont: "yrsa", serif;
+}
+
+/* ------------- navbar ------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar-frame {
+  height: 100px;
+  background-color: var(--mainBackground);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  margin: 25px 0px 25px 40px;
+}
+
+.navbar-frame .logo {
+  max-width: 200px;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+
+.navbar-frame.logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar-frame .logo a img {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.navbar-frame .navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  flex: 1;
+  padding: 0 10px;
+}
+
+.navbar-frame .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-frame .navbar ul li a {
+  text-decoration: none;
+  color: var(--vtDarkBlue);
+  font-size: 20px;
+  font-family: var(--vtPrimaryFont);
+  font-weight: bold;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 25px 50px 0px 0px;
+}
+
+.navbar-frame .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+  color: var(--vtDarkBlue);
+}
+
+.navbar-frame .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.navbar-frame .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar-frame .navbar .icon-bar i {
+  background-color: var(--vtDarkBlue);
+  height: 3px;
+}
+
+.navbar-frame .navbar .account-icon {
+  margin-top: 35px;
+}
+
+/* --------------------- intro ------------------ */
+
+.intro {
+  display: grid;
+  grid:
+    ". c1 c1 c1 ." 1fr
+    / 260px 1fr 1fr 1fr 260px;
+}
+
+.tekenmethodes {
+  grid-area: c1;
+}
+
+h1 {
+  font-family: var(--vtPrimaryFont);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 63px;
+  line-height: 44px;
+
+  color: var(--vtDarkBlue);
+}
+
+.intro-tekst {
+  left: 59px;
+  top: 245px;
+
+  font-family: var(--vtSecondaryFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--vtDarkBlue);
+}
+/* --------------------- filter ----------------- */
+
+.category {
+  display: grid;
+  grid-template-columns: 255px 1fr 255px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.filter-menu {
+  font-family: var(--vtPrimaryFont);
+  font-size: 20px;
+  color: var(--vtDarkBlue);
+  grid-area: 1 / 2 / 2 / 3;
+}
+.filter-menu-items {
+  padding: 5px;
+}
+
+.filter-menu-item-1 {
+  padding-left: 55px;
+}
+
+.filter-menu-item-2 {
+  padding-left: 60px;
+}
+
+.filter-menu-item-3 {
+  padding-left: 160px;
+}
+
+.filter-menu-item-4 {
+  padding-left: 40px;
+}
+
+.filter-content {
+  cursor: pointer;
+  font-family: var(--vtPrimaryFont);
+  font-size: 18px;
+  color: var(--vtDarkBlue);
+  border: none;
+  background-color: var(--mainBackground);
+  text-decoration: none;
+  text-align: left;
+}
+/* ------------- content ------------ */
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--vtPrimaryFont);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--vtDarkBlue);
+}
+
+main {
+  justify-content: center;
+}
+
+.werkvormen {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid:
+    ". w1 w2 w3 ." 1fr
+    ". w4 w5 w6 ." 1fr
+    ". w7 w8 w9 ." 1fr
+    ". w10 w11 w12 ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.werkvormen img {
+  width: 400px;
+}
+
+.roadmap {
+  grid-area: w1;
+}
+
+.context-map {
+  grid-area: w2;
+}
+
+.common-ground-matrix {
+  grid-area: w3;
+}
+
+.grafisch-inloggen {
+  grid-area: w4;
+}
+
+.sketchnote {
+  grid-area: w5;
+}
+
+.scene {
+  grid-area: w6;
+}
+
+.gevoel-in-beeld {
+  grid-area: w7;
+}
+
+.praatplaat {
+  grid-area: w8;
+}
+
+.retrospect {
+  grid-area: w9;
+}
+
+.mindmap {
+  grid-area: w10;
+}
+
+.visuele-connecties {
+  grid-area: w11;
+}
+
+.cover-maken {
+  grid-area: w12;
+}
+
+/* -------------- laad meer --------------- */
+
+.laad-meer {
+  display: grid;
+  grid-template-columns: 255px 1fr 255px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  margin-top: 100px;
+}
+.laad-meer-content img {
+  width: 400px;
+}
+
+.laad-meer button {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-self: center;
+
+  background-color: var(--vtButton);
+  border: none;
+  width: 153px;
+  height: 54px;
+
+  font-family: var(--vtPrimaryFont);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 29px;
+  color: var(--mainBackground);
+}
+#moreContent {
+  display: none;
+}
+
+.laad-meer-content {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+
+  grid:
+    ". w13 w14 w15 ." 1fr
+    ". w16 w17 w18 ." 1fr
+    ". w19 w20 . ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+
+  justify-content: center;
+  align-content: center;
+}
+
+.cirkel-van-gezichtspunt {
+  grid-area: w13;
+}
+.over-5-jaar {
+  grid-area: w14;
+}
+.diversiteitscirkel {
+  grid-area: w15;
+}
+.drie-gedragingen {
+  grid-area: w16;
+}
+.mijn-gebruiksaanwijzing {
+  grid-area: w17;
+}
+.stop-start-doorgaan {
+  grid-area: w18;
+}
+
+.stroomschema {
+  grid-area: w19;
+}
+.teken-het-woord {
+  grid-area: w20;
+}
+
+/* ------------------ tekenmethode toevoegen--------------------- */
+
+.tekenmethode-toevoegen {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+
+  text-align: center;
+}
+
+.tekenmethode-informatie {
+  grid-area: 1 / 2 / 2 / 3;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.tekenmethode-image {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  justify-content: flex-start;
+}
+.tekenmethode-image img {
+  width: 150px;
+}
+
+.tekenmethode-toevoegen button {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: var(--vtButton);
+  border: none;
+  width: 153px;
+  height: 54px;
+
+  margin: 50px;
+  font-family: var(--vtPrimaryFont);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 29px;
+  color: var(--mainBackground);
+}
+/* -------------- footer -------------- */
+footer {
+  background: #625c51;
+  height: 125px;
+  width: 100%;
+}
+
+p.copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: var(--mainBackground);
+}
+
+/* ------------------------------ TABLET RESPONSIVE ---------- */
+
+@media screen and (max-width: 1295px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  /* ----------------------- Navbar Responsive ------------------ */
+  .navbar-frame {
+    justify-content: space-between;
+    margin: 25px 0px 50px 20px;
+  }
+
+  .navbar-frame .logo {
+    flex: 1;
+  }
+
+  .navbar-frame .navbar {
+    flex: 0;
+  }
+
+  .navbar-frame .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: var(--mainBackground);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .navbar-frame .navbar ul li a {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: 10px;
+
+    color: var(--vtDarkBlue);
+    font-size: 20px;
+    font-family: var(--vtPrimaryFont);
+    font-weight: bold;
+  }
+
+  .navbar-frame .navbar ul .close {
+    display: block;
+  }
+
+  .navbar-frame .navbar .icon-bar {
+    display: flex;
+  }
+
+  .navbar-frame .navbar ._Menus-show {
+    left: 0;
+  }
+
+  .navbar-frame .navbar .account-icon {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .filter {
+    text-align: center;
+    margin: 100px;
+    display: none;
+  }
+
+  .category {
+    display: none;
+  }
+
+  /* --------------------- intro ------------------ */
+
+  .intro {
+    display: grid;
+    grid:
+      ". c1 c1 ." 1fr
+      / 60px 1fr 1fr 60px;
+
+    justify-content: center;
+    align-content: center;
+  }
+
+  .tekenmethodes {
+    grid-area: c1;
+  }
+
+  h1 {
+    font-family: var(--vtPrimaryFont);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 63px;
+    line-height: 44px;
+
+    color: var(--vtDarkBlue);
+  }
+
+  .intro-tekst {
+    left: 59px;
+    top: 245px;
+
+    font-family: var(--vtSecondaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--vtDarkBlue);
+  }
+
+  /* ---------------------- content responsive -------------- */
+  .werkvormen {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+
+    grid:
+      ". w1 w2 ." 1fr
+      ". w3 w4 ." 1fr
+      ". w5 w6 ." 1fr
+      ". w7 w8 ." 1fr
+      ". w9 w10 ." 1fr
+      ". w11 w12 ." 1fr
+      / 1fr 1fr 1fr 1fr;
+  }
+
+  .werkvormen img {
+    width: 300px;
+  }
+
+  .roadmap {
+    grid-area: w1;
+  }
+  .context-map {
+    grid-area: w2;
+  }
+  .common-ground-matrix {
+    grid-area: w3;
+  }
+  .grafisch-inloggen {
+    grid-area: w4;
+  }
+  .sketchnote {
+    grid-area: w5;
+  }
+  .scene {
+    grid-area: w6;
+  }
+  .gevoel-in-beeld {
+    grid-area: w7;
+  }
+  .praatplaat {
+    grid-area: w8;
+  }
+  .retrospect {
+    grid-area: w9;
+  }
+  .mindmap {
+    grid-area: w10;
+  }
+  .visuele-connecties {
+    grid-area: w11;
+  }
+  .cover-maken {
+    grid-area: w12;
+  }
+
+  /* ------- laad meer ----- */
+  .laad-meer-content {
+    display: grid;
+    grid:
+      ". w13 w14 ." 1fr
+      ". w15 w16 ." 1fr
+      ". w17 w18 ." 1fr
+      ". w19 w20 ." 1fr
+      / 1fr 1fr 1fr 1fr;
+
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .laad-meer-content img {
+    width: 300px;
+  }
+
+  .cirkel-van-gezichtspunt {
+    grid-area: w13;
+  }
+  .over-5-jaar {
+    grid-area: w14;
+  }
+  .diversiteitscirkel {
+    grid-area: w15;
+  }
+  .drie-gedragingen {
+    grid-area: w16;
+  }
+  .mijn-gebruiksaanwijzing {
+    grid-area: w17;
+  }
+  .stop-start-doorgaan {
+    grid-area: w18;
+  }
+
+  .stroomschema {
+    grid-area: w19;
+  }
+  .teken-het-woord {
+    grid-area: w20;
+  }
+  /* --------------- tekenmethodes toevoegen ----------------------- */
+
+  .tekenmethode-toevoegen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    text-align: center;
+  }
+
+  .tekenmethode-informatie {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .tekenmethode-image img {
+    display: none;
+  }
+
+  .tekenmethode-toevoegen button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: var(--vtButton);
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: var(--vtPrimaryFont);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--mainBackground);
+  }
+}
+
+/* PHONE RESPONSIVE */
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  /* ----------------------- Navbar Responsive ------------------ */
+  .navbar-frame {
+    justify-content: space-between;
+    margin: 25px 0px 50px 20px;
+  }
+
+  .navbar-frame .logo {
+    flex: 1;
+  }
+
+  .navbar-frame .navbar {
+    flex: 0;
+  }
+
+  .navbar-frame .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: var(--mainBackground);
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .navbar-frame .navbar ul li a {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: 10px;
+
+    color: var(--vtDarkBlue);
+    font-size: 20px;
+    font-family: var(--vtPrimaryFont);
+    font-weight: bold;
+  }
+
+  .navbar-frame .navbar ul .close {
+    display: block;
+  }
+
+  .navbar-frame .navbar .icon-bar {
+    display: flex;
+  }
+
+  .navbar-frame .navbar ._Menus-show {
+    left: 0;
+  }
+
+  .navbar-frame .navbar .account-icon {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: normal;
+  }
+
+  .filter {
+    text-align: center;
+    margin: 100px;
+    display: none;
+  }
+  /* ---------------------- content responsive -------------- */
+  .werkvormen {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    grid:
+      ". w1 ." 1fr
+      ". w2 ." 1fr
+      ". w3 ." 1fr
+      ". w4 ." 1fr
+      ". w5 ." 1fr
+      ". w6 ." 1fr
+      ". w7 ." 1fr
+      ". w8 ." 1fr
+      ". w9 ." 1fr
+      ". w10 ." 1fr
+      ". w11 ." 1fr
+      ". w12 ." 1fr
+      / 1fr 1fr 1fr;
+  }
+
+  .werkvormen img {
+    width: 300px;
+  }
+
+  .roadmap {
+    grid-area: w1;
+  }
+  .context-map {
+    grid-area: w2;
+  }
+  .common-ground-matrix {
+    grid-area: w3;
+  }
+  .grafisch-inloggen {
+    grid-area: w4;
+  }
+  .sketchnote {
+    grid-area: w5;
+  }
+  .scene {
+    grid-area: w6;
+  }
+  .gevoel-in-beeld {
+    grid-area: w7;
+  }
+  .praatplaat {
+    grid-area: w8;
+  }
+  .retrospect {
+    grid-area: w9;
+  }
+  .mindmap {
+    grid-area: w10;
+  }
+  .visuele-connecties {
+    grid-area: w11;
+  }
+  .cover-maken {
+    grid-area: w12;
+  }
+
+  /* ------- laad meer ----- */
+
+  .laad-meer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  .laad-meer button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: var(--vtButton);
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: var(--vtPrimaryFont);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--mainBackground);
+  }
+
+  .laad-meer-content {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    grid:
+      ". w13 ." 1fr
+      ". w14 ." 1fr
+      ". w15 ." 1fr
+      ". w16 ." 1fr
+      ". w17 ." 1fr
+      ". w18 ." 1fr
+      ". w19 ." 1fr
+      ". w20 ." 1fr
+      / 1fr 1fr 1fr;
+  }
+  .laad-meer-content img {
+    width: 300px;
+  }
+  #moreContent {
+    display: none;
+  }
+
+  .cirkel-van-gezichtspunt {
+    grid-area: w13;
+  }
+  .over-5-jaar {
+    grid-area: w14;
+  }
+  .diversiteitscirkel {
+    grid-area: w15;
+  }
+  .drie-gedragingen {
+    grid-area: w16;
+  }
+  .mijn-gebruiksaanwijzing {
+    grid-area: w17;
+  }
+  .stop-start-doorgaan {
+    grid-area: w18;
+  }
+
+  .stroomschema {
+    grid-area: w19;
+  }
+  .teken-het-woord {
+    grid-area: w20;
+  }
+
+  /* --------------- tekenmethodes toevoegen ----------------------- */
+
+  .tekenmethode-toevoegen {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    text-align: center;
+  }
+
+  .tekenmethode-informatie {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .tekenmethode-image img {
+    display: none;
+  }
+
+  .tekenmethode-toevoegen button {
+    grid-area: 1/ 2/ 2 / 3;
+    background-color: var(--vtButton);
+    border: none;
+    width: 125px;
+    height: 50px;
+
+    font-family: var(--vtPrimaryFont);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--mainBackground);
+  }
+}
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
