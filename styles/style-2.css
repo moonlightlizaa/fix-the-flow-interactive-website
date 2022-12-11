@@ -1,0 +1,212 @@
+/* ------------- navbar ------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar-frame {
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  margin: 25px 0px 25px 40px;
+}
+
+.navbar-frame .logo {
+  max-width: 200px;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+
+.navbar-frame.logo a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar-frame .logo a img {
+  max-width: 100%;
+  max-height: 60px;
+}
+
+.navbar-frame .navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  flex: 1;
+  padding: 0 10px;
+}
+
+.navbar-frame .navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-frame .navbar ul li a {
+  text-decoration: none;
+  color: #090940;
+  font-size: 20px;
+  font-family: "rigid-square";
+  font-weight: bold;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  padding: 0 10px;
+  margin: 25px 50px 0px 0px;
+}
+
+.navbar-frame .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+  color: #090940;
+}
+
+.navbar-frame .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.navbar-frame .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar-frame .navbar .icon-bar i {
+  background-color: #090940;
+  height: 3px;
+}
+
+.navbar-frame .navbar .account-icon {
+  margin-top: 35px;
+}
+
+/* ------------- content ------------ */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+article {
+  width: 27.5em;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: "rigid-square" sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+
+  text-align: center;
+  color: #090940;
+  margin-bottom: 2em;
+}
+
+p {
+  font-family: "yrsa";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: #090940;
+}
+
+footer {
+  background: #625c51;
+  height: 125px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p.copyright {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+
+@media screen and (max-width: 650px) {
+  /* ----------------------- Navbar Responsive ------------------ */
+  .navbar-frame {
+    justify-content: space-between;
+    margin: 25px 0px 50px 20px;
+  }
+
+  .navbar-frame .logo {
+    flex: 1;
+  }
+
+  .navbar-frame .navbar {
+    flex: 0;
+  }
+
+  .navbar-frame .navbar ul {
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left 0.3s;
+    -o-transition: left 0.3s;
+    transition: left 0.3s;
+  }
+
+  .navbar-frame .navbar ul li a {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: 10px;
+
+    color: #090940;
+    font-size: 20px;
+    font-family: "rigid-square";
+    font-weight: bold;
+  }
+
+  .navbar-frame .navbar ul .close {
+    display: block;
+  }
+
+  .navbar-frame .navbar .icon-bar {
+    display: flex;
+  }
+
+  .navbar-frame .navbar ._Menus-show {
+    left: 0;
+  }
+
+  .navbar-frame .navbar .account-icon {
+    padding: 10px;
+    margin-left: 50px;
+    height: auto;
+    line-height: normal;
+  }
+
+  /* ----------------------- categorieen --------------------- */
+}

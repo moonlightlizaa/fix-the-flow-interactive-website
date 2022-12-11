@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ddq2rww.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Visual Thinking in het HBO</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="navbar-frame">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="assets/0-logo/vtHBO-v1.0-Logo_1.svg"
+              alt="logo Visual Thinking in het HBO"
+            />
+          </a>
+        </div>
+        <div class="navbar">
+          <!-- hamburgermenu -->
+          <div class="icon-bar" onclick="Show()">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <ul id="nav-lists">
+            <li class="close"><span onclick="Hide()">×</span></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over.html">Over</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a class="account-icon">
+                <img src="assets/0-logo/1-icons/account.svg" alt="account" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="intro">
+      <section class="tekenmethodes">
+        <h1>Tekenmethodes</h1>
+        <p class="intro-tekst">
+          Visual thinking
+          <b
+            >is het gebruik van beelden om je ideeën, concepten en plannen te
+            beschrijven.</b
+          >
+          Ons platform is er om jou te helpen om een visual thinker te worden.
+          <br />
+          <br />
+          Er zijn
+          <b>verschillende soorten tekenmethodes voor visual thinking.</b> Deze
+          methodes zijn ingedeeld in categorieën met elk een ander doel. Hier
+          kan je alle visual thinking tekenmethodes vinden en zelf ook
+          uitproberen, want
+          <b
+            >bij elke tekenmethode is er een beschrijving, stappenplan en
+            voorbeelden toegevoegd! Heel veel leerplezier!</b
+          >
+        </p>
+      </section>
+    </section>
+
+    <section class="category">
+      <table class="filter-menu">
+        <thead>
+          <tr>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-item"></th>
+            <th class="filter-menu-item-2">Duur</th>
+            <th class="filter-menu-items"></th>
+            <th class="filter-menu-items-3">Niveau</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/onderzoeken-en-begrijpen.svg"
+                alt="icoon onderzoeken en begrijpen"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">Onderzoeken en begrijpen</button>
+            </td>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/leren-over-jezelf.svg"
+                alt="icoon leren over jezelf"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">
+                Leren over jezelf en reflecteren
+              </button>
+            </td>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/creatief.svg"
+                alt="icoon creatief denken"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">Creatief denken</button>
+            </td>
+            <td class="filter-menu-item-1">
+              <img
+                src="assets/0-logo/1-icons/minder-dan.svg"
+                alt="icoon minder dan een uur"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">uur</button>
+            </td>
+            <td class="filter-menu-item-4">
+              <button class="filter-content">Simpel</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/organiseren-en-plannen.svg"
+                alt="icoon organiseren en plannen"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">Organiseren en plannen</button>
+            </td>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/communiceren.svg"
+                alt="icoon communiceren en presenteren"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">
+                Communiceren en presenteren
+              </button>
+            </td>
+            <td class="filter-menu-items">
+              <img
+                src="assets/0-logo/1-icons/leren-over-anderen.svg"
+                alt="icoon leren over anderen"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">Leren over anderen</button>
+            </td>
+            <td class="filter-menu-item-1">
+              <img
+                src="assets/0-logo/1-icons/meer-dan.svg"
+                alt="icoon meer dan een uur"
+              />
+            </td>
+            <td class="filter-menu-items">
+              <button class="filter-content">uur</button>
+            </td>
+            <td class="filter-menu-item-4">
+              <button class="filter-content">Complex</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <main class="werkvormen">
+      <div class="roadmap">
+        <a href="coming-soon.html">
+          <img
+            src="assets/4-organiseren-en-plannen/roadmap.jpg"
+            alt="visueel voorbeeld van roadmap"
+          />
+          <br />
+          <h2>Roadmap</h2>
+        </a>
+      </div>
+
+      <div class="context-map">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/context-map.jpg"
+            alt="visueel voorbeeld van context map"
+          />
+          <br />
+          <h2>Context map</h2>
+        </a>
+      </div>
+
+      <div class="common-ground-matrix">
+        <a href="coming-soon.html">
+          <img
+            src="assets/6-leren-over-anderen/common-ground-matrix.jpg"
+            alt="visueel voorbeeld van common ground matrix"
+          />
+          <br />
+          <h2>Common Ground Matrix</h2>
+        </a>
+      </div>
+
+      <div class="grafisch-inloggen">
+        <a href="coming-soon.html">
+          <img
+            src="assets/6-leren-over-anderen/grafisch-inloggen.jpg"
+            alt="visueel voorbeeld van grafisch inloggen"
+          />
+          <br />
+          <h2>Grafisch inloggen</h2></a
+        >
+      </div>
+
+      <div class="sketchnote">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/sketchnote.jpg"
+            alt="visueel voorbeeld van sketchnote"
+          />
+          <br />
+          <h2>Sketchnote</h2>
+        </a>
+      </div>
+
+      <div class="scene">
+        <a href="coming-soon.html">
+          <img
+            src="assets/5-communiceren-en-presenteren/een-scene.jpg"
+            alt="visueel voorbeeld van scene"
+          />
+          <br />
+          <h2>Een Scene</h2>
+        </a>
+      </div>
+
+      <div class="gevoel-in-beeld">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/gevoel-in-beeld.jpg"
+            alt="visueel voorbeeld van gevoel in beeld"
+          />
+          <br />
+          <h2>Gevoel in Beeld</h2>
+        </a>
+      </div>
+
+      <div class="praatplaat">
+        <a href="coming-soon.html">
+          <img
+            src="assets/5-communiceren-en-presenteren/een-praatplaat.jpg"
+            alt="visueel voorbeeld van praatplaat"
+          />
+          <br />
+          <h2>Praatplaat</h2>
+        </a>
+      </div>
+
+      <div class="retrospect">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/retrospect.jpg"
+            alt="visueel voorbeeld van retrospect"
+          />
+          <br />
+          <h2>Retrospect</h2>
+        </a>
+      </div>
+
+      <div class="mindmap">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/mindmap.jpg"
+            alt="visueel voorbeeld van mindmap"
+          />
+          <br />
+          <h2>Mindmap</h2>
+        </a>
+      </div>
+
+      <div class="visuele-connecties">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/visuele-connecties.jpg"
+            alt="visueel voorbeeld van visuele connecties"
+          />
+          <br />
+          <h2>Visuele Connecties</h2>
+        </a>
+      </div>
+
+      <div class="cover-maken">
+        <a href="coming-soon.html">
+          <img
+            src="assets/5-communiceren-en-presenteren/cover-maken.jpg"
+            alt="visueel voorbeeld van een cover maken"
+          />
+          <br />
+          <h2>Cover Maken</h2>
+        </a>
+      </div>
+    </main>
+
+    <section class="laad-meer-content" id="moreContent">
+      <div class="cirkel-van-gezichtspunt">
+        <a href="coming-soon.html">
+          <img
+            src="assets/6-leren-over-anderen/circkel-van-gezichtspunt.jpg"
+            alt="visueel voorbeeld van cirkel van circkel-van-gezichtspunt"
+          />
+          <br />
+          <h2>Cirkel van gezichtspunt</h2>
+        </a>
+      </div>
+
+      <div class="over-5-jaar">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/over-5-jaar.jpg"
+            alt="visueel voorbeeld van werkvorm over 5 jaar"
+          />
+          <br />
+          <h2>Over 5 Jaar</h2>
+        </a>
+      </div>
+
+      <div class="diversiteitscirkel">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/diversiteitscirkel.jpg"
+            alt="visueel voorbeeld van diversiteitscirkel"
+          />
+          <br />
+          <h2>Diversiteitscirkel</h2>
+        </a>
+      </div>
+
+      <div class="drie-gedragingen">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/drie-gedragingen.jpg"
+            alt="visueel voorbeeld van drie gedragingen"
+          />
+          <br />
+          <h2>Drie Gedragingen</h2>
+        </a>
+      </div>
+
+      <div class="mijn-gebruiksaanwijzing">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/mijn-gebruiksaanwijzing.jpg"
+            alt="visueel voorbeeld van de werkvorm mijn gebruiksaanwijzing"
+          />
+          <br />
+          <h2>Mijn Gebruiksaanwijzing</h2>
+        </a>
+      </div>
+
+      <div class="stop-start-doorgaan">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/stop-start-doorgaan.jpg"
+            alt="visueel voorbeeld van stop
+        start doorgaan"
+          />
+          <br />
+          <h2>Stop-Start-Doorgaan</h2>
+        </a>
+      </div>
+
+      <div class="stroomschema">
+        <a href="coming-soon.html">
+          <img
+            src="assets/4-organiseren-en-plannen/stroomschema.jpg"
+            alt="visueel voorbeeld van stroomschema"
+          />
+          <br />
+          <h2>Stroomschema</h2>
+        </a>
+      </div>
+
+      <div class="teken-het-woord">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/teken-het-woord.jpg"
+            alt="visueel voorbeeld van teken het woord"
+          />
+          <br />
+          <h2>Teken het Woord</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="laad-meer">
+      <button onclick="myFunction();" id="loadMore">Laad meer</button>
+    </section>
+
+    <section class="tekenmethode-toevoegen">
+      <div class="tekenmethode-informatie">
+        <h2>
+          Wil je zelf een tekenmethode <br />
+          toevoegen aan onze verzameling? <br />
+          <button>Voeg toe</button>
+        </h2>
+      </div>
+
+      <div class="tekenmethode-image">
+        <img src="assets/0-logo/potloden-1.png" alt="potlood" />
+      </div>
+    </section>
+
+    <footer>
+      <p class="copyright">Visual Thinking in het HBO © Charley Muhren, 2022</p>
+    </footer>
+  </body>
+  <script src="scripts/script.js"></script>
+</html>
