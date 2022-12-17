@@ -1,3 +1,5 @@
+// navbar dingen
+
 const navList = document.getElementById("nav-lists");
 function Show() {
   navList.classList.add("_Menus-show");
@@ -6,6 +8,8 @@ function Show() {
 function Hide() {
   navList.classList.remove("_Menus-show");
 }
+
+// load more knop
 
 function myFunction() {
   const content = document.getElementById("moreContent");
