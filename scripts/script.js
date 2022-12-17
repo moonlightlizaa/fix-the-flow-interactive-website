@@ -1,4 +1,4 @@
-var navList = document.getElementById("nav-lists");
+const navList = document.getElementById("nav-lists");
 function Show() {
   navList.classList.add("_Menus-show");
 }
@@ -8,9 +8,9 @@ function Hide() {
 }
 
 function myFunction() {
-  var content = document.getElementById("moreContent");
-  var btnText = document.getElementById("loadMore");
-  var moveBtn = document.getElementById("loadMore");
+  const content = document.getElementById("moreContent");
+  const btnText = document.getElementById("loadMore");
+  const moveBtn = document.getElementById("loadMore");
 
   if (content.style.display === "none") {
     content.style.display = "grid";
@@ -24,8 +24,8 @@ function myFunction() {
 }
 
 function myFunction() {
-  var content = document.getElementById("moreContent");
-  var btnText = document.getElementById("loadMore");
+  const content = document.getElementById("moreContent");
+  const btnText = document.getElementById("loadMore");
 
   if (content.style.display === "grid") {
     content.style.display = "none";
