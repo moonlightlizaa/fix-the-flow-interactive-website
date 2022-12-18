@@ -103,9 +103,7 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content" onclick="">
-                Onderzoeken en begrijpen
-              </button>
+              <button class="filter-content">Onderzoeken en begrijpen</button>
             </td>
             <td class="filter-menu-items">
               <img
@@ -114,7 +112,7 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">
+              <button class="filter-content" id="filter-leren-jezelf onclick="filterLerenJezelf()">
                 Leren over jezelf en reflecteren
               </button>
             </td>
@@ -188,7 +186,7 @@
     </section>
 
     <main class="werkvormen">
-      <div class="roadmap">
+      <div class="roadmap" id="organiseren">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/roadmap.jpg"
@@ -199,7 +197,7 @@
         </a>
       </div>
 
-      <div class="context-map">
+      <div class="context-map" id="organiseren">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/context-map.jpg"
@@ -210,7 +208,7 @@
         </a>
       </div>
 
-      <div class="common-ground-matrix">
+      <div class="common-ground-matrix" id="leren-anderen">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/common-ground-matrix.jpg"
@@ -221,7 +219,7 @@
         </a>
       </div>
 
-      <div class="grafisch-inloggen">
+      <div class="grafisch-inloggen" id="leren-anderen">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/grafisch-inloggen.jpg"
@@ -232,7 +230,7 @@
         >
       </div>
 
-      <div class="sketchnote">
+      <div class="sketchnote" id="onderzoeken">
         <a href="coming-soon.html">
           <img
             src="assets/1-onderzoeken-en-begrijpen/sketchnote.jpg"
@@ -244,7 +242,7 @@
       </div>
 
       <div class="scene">
-        <a href="coming-soon.html">
+        <a href="coming-soon.html" id="communiceren">
           <img
             src="assets/5-communiceren-en-presenteren/een-scene.jpg"
             alt="visueel voorbeeld van scene"
@@ -254,7 +252,7 @@
         </a>
       </div>
 
-      <div class="gevoel-in-beeld">
+      <div class="gevoel-in-beeld" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/gevoel-in-beeld.jpg"
@@ -265,7 +263,7 @@
         </a>
       </div>
 
-      <div class="praatplaat">
+      <div class="praatplaat" id="communiceren">
         <a href="coming-soon.html">
           <img
             src="assets/5-communiceren-en-presenteren/een-praatplaat.jpg"
@@ -276,7 +274,7 @@
         </a>
       </div>
 
-      <div class="retrospect">
+      <div class="retrospect" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/retrospect.jpg"
@@ -287,7 +285,7 @@
         </a>
       </div>
 
-      <div class="mindmap">
+      <div class="mindmap" id="creatief">
         <a href="coming-soon.html">
           <img
             src="assets/3-creatief-denken/mindmap.jpg"
@@ -298,7 +296,7 @@
         </a>
       </div>
 
-      <div class="visuele-connecties">
+      <div class="visuele-connecties" id="creatief">
         <a href="coming-soon.html">
           <img
             src="assets/3-creatief-denken/visuele-connecties.jpg"
@@ -309,7 +307,7 @@
         </a>
       </div>
 
-      <div class="cover-maken">
+      <div class="cover-maken" id="communiceren">
         <a href="coming-soon.html">
           <img
             src="assets/5-communiceren-en-presenteren/cover-maken.jpg"
@@ -322,7 +320,7 @@
     </main>
 
     <section class="laad-meer-content" id="moreContent">
-      <div class="cirkel-van-gezichtspunt">
+      <div class="cirkel-van-gezichtspunt" id="leren-anderen">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/circkel-van-gezichtspunt.jpg"
@@ -333,7 +331,7 @@
         </a>
       </div>
 
-      <div class="over-5-jaar">
+      <div class="over-5-jaar" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/over-5-jaar.jpg"
@@ -344,7 +342,7 @@
         </a>
       </div>
 
-      <div class="diversiteitscirkel">
+      <div class="diversiteitscirkel" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/diversiteitscirkel.jpg"
@@ -355,7 +353,7 @@
         </a>
       </div>
 
-      <div class="drie-gedragingen">
+      <div class="drie-gedragingen" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/drie-gedragingen.jpg"
@@ -366,7 +364,7 @@
         </a>
       </div>
 
-      <div class="mijn-gebruiksaanwijzing">
+      <div class="mijn-gebruiksaanwijzing" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/mijn-gebruiksaanwijzing.jpg"
@@ -377,7 +375,7 @@
         </a>
       </div>
 
-      <div class="stop-start-doorgaan">
+      <div class="stop-start-doorgaan" id="leren-jezelf">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/stop-start-doorgaan.jpg"
@@ -389,7 +387,7 @@
         </a>
       </div>
 
-      <div class="stroomschema">
+      <div class="stroomschema" id="organiseren">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/stroomschema.jpg"
@@ -400,7 +398,7 @@
         </a>
       </div>
 
-      <div class="teken-het-woord">
+      <div class="teken-het-woord" id="onderzoeken">
         <a href="coming-soon.html">
           <img
             src="assets/1-onderzoeken-en-begrijpen/teken-het-woord.jpg"
@@ -434,5 +432,5 @@
       <p class="copyright">Visual Thinking in het HBO © Charley Muhren, 2022</p>
     </footer>
   </body>
-  <script src="scripts/script.js"></script>
+  <script src="scripts/script.js" defer></script>
 </html>

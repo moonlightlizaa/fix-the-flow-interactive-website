@@ -41,3 +41,19 @@ function myFunction() {
     moreContent.style.display = "grid";
   }
 }
+
+// filter leren over jezelf
+
+// function myFunction() {
+//   var hide = document.getElementById("myDIV");
+//   if (hide.style.display === "none") {
+//     hide.style.display = "block";
+//   } else {
+//     hide.style.display = "none";
+//   }
+// }
+// let onderzoeken = document.getElementById("filter-leren-jezelf");
+// onderzoeken.addEventListener("click", filterLerenJezelf);
+// function filterLerenJezelf() {
+//   onderzoeken.style.visibility("hidden");
+// }

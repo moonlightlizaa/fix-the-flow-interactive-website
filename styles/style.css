@@ -192,6 +192,29 @@ h1 {
 
 /* onderzoeken en begrijpen filter */
 
+#onderzoeken {
+  visibility: visible;
+}
+
+#leren-jezelf {
+  visibility: visible;
+}
+
+#creatief {
+  visibility: visible;
+}
+
+#leren-anderen {
+  visibility: visible;
+}
+
+#organiseren {
+  visibility: visible;
+}
+
+#communiceren {
+  visibility: visible;
+}
 /* ------------- content ------------ */
 
 a {
