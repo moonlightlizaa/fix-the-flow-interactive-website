@@ -103,7 +103,9 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">Onderzoeken en begrijpen</button>
+              <button class="filter-content" id="btn-filter-onderzoek">
+                Onderzoeken en begrijpen
+              </button>
             </td>
             <td class="filter-menu-items">
               <img
@@ -112,7 +114,11 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">
+              <button
+                class="filter-content"
+                id="btn-filter-leren-jezelf"
+                onclick="filterLerenJezelf(), showFilterJezelf()"
+              >
                 Leren over jezelf en reflecteren
               </button>
             </td>
@@ -123,7 +129,13 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">Creatief denken</button>
+              <button
+                class="filter-content"
+                id="btn-filter-creatief-denken"
+                onclick="filterCreatief(), showFilterCreatief()"
+              >
+                Creatief denken
+              </button>
             </td>
             <td class="filter-menu-item-1">
               <img
@@ -185,7 +197,7 @@
       </table>
     </section>
 
-    <main class="werkvormen">
+    <main class="werkvormen" id="mainContent">
       <div class="roadmap">
         <a href="coming-soon.html">
           <img
@@ -200,7 +212,7 @@
       <div class="context-map">
         <a href="coming-soon.html">
           <img
-            src="assets/1-onderzoeken-en-begrijpen/context-map.jpg"
+            src="assets/4-organiseren-en-plannen/context-map.jpg"
             alt="visueel voorbeeld van context map"
           />
           <br />
@@ -414,6 +426,136 @@
       <button onclick="myFunction();" id="loadMore">Laad meer</button>
     </section>
 
+    <!-- filter content -->
+
+    <section class="onderzoeken-begrijpen" id="filter-onderzoeken-begrijpen">
+      <div class="filter-sketchnote">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/sketchnote.jpg"
+            alt="visueel voorbeeld van sketchnote"
+          />
+          <br />
+          <h2>Sketchnote</h2>
+        </a>
+      </div>
+
+      <div class="filter-teken-het-woord">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/teken-het-woord.jpg"
+            alt="visueel voorbeeld van teken het woord"
+          />
+          <br />
+          <h2>Teken het Woord</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="leren-jezelf" id="filter-leren-jezelf">
+      <div class="filter-gevoel-in-beeld">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/gevoel-in-beeld.jpg"
+            alt="visueel voorbeeld van gevoel in beeld"
+          />
+          <br />
+          <h2>Gevoel in Beeld</h2>
+        </a>
+      </div>
+
+      <div class="filter-retrospect">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/retrospect.jpg"
+            alt="visueel voorbeeld van retrospect"
+          />
+          <br />
+          <h2>Retrospect</h2>
+        </a>
+      </div>
+
+      <div class="filter-over-5-jaar">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/over-5-jaar.jpg"
+            alt="visueel voorbeeld van werkvorm over 5 jaar"
+          />
+          <br />
+          <h2>Over 5 Jaar</h2>
+        </a>
+      </div>
+
+      <div class="filter-diversiteitscirkel">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/diversiteitscirkel.jpg"
+            alt="visueel voorbeeld van diversiteitscirkel"
+          />
+          <br />
+          <h2>Diversiteitscirkel</h2>
+        </a>
+      </div>
+
+      <div class="filter-drie-gedragingen">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/drie-gedragingen.jpg"
+            alt="visueel voorbeeld van drie gedragingen"
+          />
+          <br />
+          <h2>Drie Gedragingen</h2>
+        </a>
+      </div>
+
+      <div class="filter-mijn-gebruiksaanwijzing">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/mijn-gebruiksaanwijzing.jpg"
+            alt="visueel voorbeeld van de werkvorm mijn gebruiksaanwijzing"
+          />
+          <br />
+          <h2>Mijn Gebruiksaanwijzing</h2>
+        </a>
+      </div>
+
+      <div class="filter-stop-start-doorgaan">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/stop-start-doorgaan.jpg"
+            alt="visueel voorbeeld van stop
+        start doorgaan"
+          />
+          <br />
+          <h2>Stop-Start-Doorgaan</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="creatief-denken" id="filter-creatief-denken">
+      <div class="filter-mindmap">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/mindmap.jpg"
+            alt="visueel voorbeeld van mindmap"
+          />
+          <br />
+          <h2>Mindmap</h2>
+        </a>
+      </div>
+
+      <div class="filter-visuele-connecties">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/visuele-connecties.jpg"
+            alt="visueel voorbeeld van visuele connecties"
+          />
+          <br />
+          <h2>Visuele Connecties</h2>
+        </a>
+      </div>
+    </section>
+
     <section class="tekenmethode-toevoegen">
       <div class="tekenmethode-informatie">
         <h2>
@@ -432,5 +574,5 @@
       <p class="copyright">Visual Thinking in het HBO © Charley Muhren, 2022</p>
     </footer>
   </body>
-  <script src="scripts/script.js"></script>
+  <script src="scripts/script.js" defer></script>
 </html>
