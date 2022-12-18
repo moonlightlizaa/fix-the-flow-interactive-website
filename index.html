@@ -103,7 +103,9 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">Onderzoeken en begrijpen</button>
+              <button class="filter-content" id="btn-filter-onderzoek">
+                Onderzoeken en begrijpen
+              </button>
             </td>
             <td class="filter-menu-items">
               <img
@@ -112,7 +114,11 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content" id="filter-leren-jezelf onclick="filterLerenJezelf()">
+              <button
+                class="filter-content"
+                id="btn-filter-leren-jezelf"
+                onclick="filterLerenJezelf(), showFilterJezelf()"
+              >
                 Leren over jezelf en reflecteren
               </button>
             </td>
@@ -123,7 +129,13 @@
               />
             </td>
             <td class="filter-menu-items">
-              <button class="filter-content">Creatief denken</button>
+              <button
+                class="filter-content"
+                id="btn-filter-creatief-denken"
+                onclick="filterCreatief(), showFilterCreatief()"
+              >
+                Creatief denken
+              </button>
             </td>
             <td class="filter-menu-item-1">
               <img
@@ -185,8 +197,8 @@
       </table>
     </section>
 
-    <main class="werkvormen">
-      <div class="roadmap" id="organiseren">
+    <main class="werkvormen" id="mainContent">
+      <div class="roadmap">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/roadmap.jpg"
@@ -197,7 +209,7 @@
         </a>
       </div>
 
-      <div class="context-map" id="organiseren">
+      <div class="context-map">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/context-map.jpg"
@@ -208,7 +220,7 @@
         </a>
       </div>
 
-      <div class="common-ground-matrix" id="leren-anderen">
+      <div class="common-ground-matrix">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/common-ground-matrix.jpg"
@@ -219,7 +231,7 @@
         </a>
       </div>
 
-      <div class="grafisch-inloggen" id="leren-anderen">
+      <div class="grafisch-inloggen">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/grafisch-inloggen.jpg"
@@ -230,7 +242,7 @@
         >
       </div>
 
-      <div class="sketchnote" id="onderzoeken">
+      <div class="sketchnote">
         <a href="coming-soon.html">
           <img
             src="assets/1-onderzoeken-en-begrijpen/sketchnote.jpg"
@@ -242,7 +254,7 @@
       </div>
 
       <div class="scene">
-        <a href="coming-soon.html" id="communiceren">
+        <a href="coming-soon.html">
           <img
             src="assets/5-communiceren-en-presenteren/een-scene.jpg"
             alt="visueel voorbeeld van scene"
@@ -252,7 +264,7 @@
         </a>
       </div>
 
-      <div class="gevoel-in-beeld" id="leren-jezelf">
+      <div class="gevoel-in-beeld">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/gevoel-in-beeld.jpg"
@@ -263,7 +275,7 @@
         </a>
       </div>
 
-      <div class="praatplaat" id="communiceren">
+      <div class="praatplaat">
         <a href="coming-soon.html">
           <img
             src="assets/5-communiceren-en-presenteren/een-praatplaat.jpg"
@@ -274,7 +286,7 @@
         </a>
       </div>
 
-      <div class="retrospect" id="leren-jezelf">
+      <div class="retrospect">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/retrospect.jpg"
@@ -285,7 +297,7 @@
         </a>
       </div>
 
-      <div class="mindmap" id="creatief">
+      <div class="mindmap">
         <a href="coming-soon.html">
           <img
             src="assets/3-creatief-denken/mindmap.jpg"
@@ -296,7 +308,7 @@
         </a>
       </div>
 
-      <div class="visuele-connecties" id="creatief">
+      <div class="visuele-connecties">
         <a href="coming-soon.html">
           <img
             src="assets/3-creatief-denken/visuele-connecties.jpg"
@@ -307,7 +319,7 @@
         </a>
       </div>
 
-      <div class="cover-maken" id="communiceren">
+      <div class="cover-maken">
         <a href="coming-soon.html">
           <img
             src="assets/5-communiceren-en-presenteren/cover-maken.jpg"
@@ -320,7 +332,7 @@
     </main>
 
     <section class="laad-meer-content" id="moreContent">
-      <div class="cirkel-van-gezichtspunt" id="leren-anderen">
+      <div class="cirkel-van-gezichtspunt">
         <a href="coming-soon.html">
           <img
             src="assets/6-leren-over-anderen/circkel-van-gezichtspunt.jpg"
@@ -331,7 +343,7 @@
         </a>
       </div>
 
-      <div class="over-5-jaar" id="leren-jezelf">
+      <div class="over-5-jaar">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/over-5-jaar.jpg"
@@ -342,7 +354,7 @@
         </a>
       </div>
 
-      <div class="diversiteitscirkel" id="leren-jezelf">
+      <div class="diversiteitscirkel">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/diversiteitscirkel.jpg"
@@ -353,7 +365,7 @@
         </a>
       </div>
 
-      <div class="drie-gedragingen" id="leren-jezelf">
+      <div class="drie-gedragingen">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/drie-gedragingen.jpg"
@@ -364,7 +376,7 @@
         </a>
       </div>
 
-      <div class="mijn-gebruiksaanwijzing" id="leren-jezelf">
+      <div class="mijn-gebruiksaanwijzing">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/mijn-gebruiksaanwijzing.jpg"
@@ -375,7 +387,7 @@
         </a>
       </div>
 
-      <div class="stop-start-doorgaan" id="leren-jezelf">
+      <div class="stop-start-doorgaan">
         <a href="coming-soon.html">
           <img
             src="assets/2-leren-over-jezelf/stop-start-doorgaan.jpg"
@@ -387,7 +399,7 @@
         </a>
       </div>
 
-      <div class="stroomschema" id="organiseren">
+      <div class="stroomschema">
         <a href="coming-soon.html">
           <img
             src="assets/4-organiseren-en-plannen/stroomschema.jpg"
@@ -398,7 +410,7 @@
         </a>
       </div>
 
-      <div class="teken-het-woord" id="onderzoeken">
+      <div class="teken-het-woord">
         <a href="coming-soon.html">
           <img
             src="assets/1-onderzoeken-en-begrijpen/teken-het-woord.jpg"
@@ -412,6 +424,136 @@
 
     <section class="laad-meer">
       <button onclick="myFunction();" id="loadMore">Laad meer</button>
+    </section>
+
+    <!-- filter content -->
+
+    <section class="onderzoeken-begrijpen" id="filter-onderzoeken-begrijpen">
+      <div class="filter-sketchnote">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/sketchnote.jpg"
+            alt="visueel voorbeeld van sketchnote"
+          />
+          <br />
+          <h2>Sketchnote</h2>
+        </a>
+      </div>
+
+      <div class="filter-teken-het-woord">
+        <a href="coming-soon.html">
+          <img
+            src="assets/1-onderzoeken-en-begrijpen/teken-het-woord.jpg"
+            alt="visueel voorbeeld van teken het woord"
+          />
+          <br />
+          <h2>Teken het Woord</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="leren-jezelf" id="filter-leren-jezelf">
+      <div class="filter-gevoel-in-beeld">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/gevoel-in-beeld.jpg"
+            alt="visueel voorbeeld van gevoel in beeld"
+          />
+          <br />
+          <h2>Gevoel in Beeld</h2>
+        </a>
+      </div>
+
+      <div class="filter-retrospect">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/retrospect.jpg"
+            alt="visueel voorbeeld van retrospect"
+          />
+          <br />
+          <h2>Retrospect</h2>
+        </a>
+      </div>
+
+      <div class="filter-over-5-jaar">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/over-5-jaar.jpg"
+            alt="visueel voorbeeld van werkvorm over 5 jaar"
+          />
+          <br />
+          <h2>Over 5 Jaar</h2>
+        </a>
+      </div>
+
+      <div class="filter-diversiteitscirkel">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/diversiteitscirkel.jpg"
+            alt="visueel voorbeeld van diversiteitscirkel"
+          />
+          <br />
+          <h2>Diversiteitscirkel</h2>
+        </a>
+      </div>
+
+      <div class="filter-drie-gedragingen">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/drie-gedragingen.jpg"
+            alt="visueel voorbeeld van drie gedragingen"
+          />
+          <br />
+          <h2>Drie Gedragingen</h2>
+        </a>
+      </div>
+
+      <div class="filter-mijn-gebruiksaanwijzing">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/mijn-gebruiksaanwijzing.jpg"
+            alt="visueel voorbeeld van de werkvorm mijn gebruiksaanwijzing"
+          />
+          <br />
+          <h2>Mijn Gebruiksaanwijzing</h2>
+        </a>
+      </div>
+
+      <div class="filter-stop-start-doorgaan">
+        <a href="coming-soon.html">
+          <img
+            src="assets/2-leren-over-jezelf/stop-start-doorgaan.jpg"
+            alt="visueel voorbeeld van stop
+        start doorgaan"
+          />
+          <br />
+          <h2>Stop-Start-Doorgaan</h2>
+        </a>
+      </div>
+    </section>
+
+    <section class="creatief-denken" id="filter-creatief-denken">
+      <div class="filter-mindmap">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/mindmap.jpg"
+            alt="visueel voorbeeld van mindmap"
+          />
+          <br />
+          <h2>Mindmap</h2>
+        </a>
+      </div>
+
+      <div class="filter-visuele-connecties">
+        <a href="coming-soon.html">
+          <img
+            src="assets/3-creatief-denken/visuele-connecties.jpg"
+            alt="visueel voorbeeld van visuele connecties"
+          />
+          <br />
+          <h2>Visuele Connecties</h2>
+        </a>
+      </div>
     </section>
 
     <section class="tekenmethode-toevoegen">

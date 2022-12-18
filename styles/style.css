@@ -192,29 +192,106 @@ h1 {
 
 /* onderzoeken en begrijpen filter */
 
-#onderzoeken {
-  visibility: visible;
+#filter-onderzoeken-begrijpen {
+  display: none;
 }
 
-#leren-jezelf {
-  visibility: visible;
+.onderzoeken-begrijpen {
+  display: grid;
+  grid:
+    ". w1 w2 . ." 1fr
+    / 1fr 1fr 1fr 400px 1fr;
+  gap: 25px;
 }
 
-#creatief {
-  visibility: visible;
+.onderzoeken-begrijpen img {
+  width: 400px;
 }
 
-#leren-anderen {
-  visibility: visible;
+.filter-sketchnote {
+  grid-area: w1;
 }
 
-#organiseren {
-  visibility: visible;
+.filter-teken-het-woord {
+  grid-area: w2;
 }
 
-#communiceren {
-  visibility: visible;
+/* leren over jezelf filter */
+
+#filter-leren-jezelf {
+  display: none;
 }
+
+.leren-jezelf {
+  display: grid;
+  grid:
+    ". w1 w2 w3 ." 1fr
+    ". w4 w5 w6 ." 1fr
+    ". w7 . . ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+
+  justify-items: center;
+}
+
+.leren-jezelf img {
+  width: 400px;
+}
+
+.filter-gevoel-in-beeld {
+  grid-area: w1;
+}
+
+.filter-retrospect {
+  grid-area: w2;
+}
+
+.filter-over-5-jaar {
+  grid-area: w3;
+}
+
+.filter-diversiteitscirkel {
+  grid-area: w4;
+}
+
+.filter-drie-gedragingen {
+  grid-area: w5;
+}
+
+.filter-mijn-gebruiksaanwijzing {
+  grid-area: w6;
+}
+
+.filter-stop-start-doorgaan {
+  grid-area: w7;
+}
+
+/* creatief denken */
+
+#filter-creatief-denken {
+  display: none;
+}
+
+.creatief-denken {
+  display: grid;
+  grid:
+    ". w1 w2 . ." 1fr
+    / 1fr 1fr 1fr 400px 1fr;
+  gap: 25px;
+}
+
+.creatief-denken img {
+  width: 400px;
+}
+
+.filter-mindmap {
+  grid-area: w1;
+}
+
+.filter-visuele-connecties {
+  grid-area: w2;
+}
+
 /* ------------- content ------------ */
 
 a {
