@@ -113,6 +113,9 @@
   grid:
     ". c1 c1 c1 ." 1fr
     / 260px 1fr 1fr 1fr 260px;
+
+  background: #f3f2f2;
+  height: 400px;
 }
 
 .tekenmethodes {
@@ -121,20 +124,18 @@
 
 h1 {
   font-family: var(--vtPrimaryFont);
-  font-style: normal;
+
   font-weight: 800;
   font-size: 63px;
-  line-height: 44px;
+  line-height: 20px;
 
   color: var(--vtDarkBlue);
 }
 
 .intro-tekst {
-  left: 59px;
-  top: 245px;
-
+  width: 600px;
   font-family: var(--vtSecondaryFont);
-  font-style: normal;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
@@ -290,6 +291,96 @@ h1 {
 
 .filter-visuele-connecties {
   grid-area: w2;
+}
+
+/* Organiseren en plannen  */
+
+#filter-organiseren-plannen {
+  display: none;
+}
+
+.organiseren-plannen {
+  display: grid;
+  grid:
+    ". w1 w2 w3 ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.organiseren-plannen img {
+  width: 400px;
+}
+
+.filter-roadmap {
+  grid-area: w1;
+}
+
+.filter-context-map {
+  grid-area: w2;
+}
+
+.filter-stroomschema {
+  grid-area: w3;
+}
+
+/* communiceren en presenteren */
+
+#filter-presenteren {
+  display: none;
+}
+
+.presenteren {
+  display: grid;
+  grid:
+    ". w1 w2 w3 ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.presenteren img {
+  width: 400px;
+}
+
+.filter-cover-maken {
+  grid-area: w1;
+}
+
+.filter-praatplaat {
+  grid-area: w2;
+}
+
+.filter-scene {
+  grid-area: w3;
+}
+
+/* leren over anderen */
+
+#filter-leren-anderen {
+  display: none;
+}
+
+.leren-anderen {
+  display: grid;
+  grid:
+    ". w1 w2 w3 ." 1fr
+    / 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.leren-anderen img {
+  width: 400px;
+}
+
+.filter-cirkel-van-gezichtspunt {
+  grid-area: w1;
+}
+
+.filter-common-ground-matrix {
+  grid-area: w2;
+}
+
+.filter-grafisch-inloggen {
+  grid-area: w3;
 }
 
 /* ------------- content ------------ */
