@@ -10,9 +10,10 @@ Ik heb gewerkt aan de user story
 "Als student wil ik eenvoudig alle werkvormen kunnen verkennen zodat ik er een kan uitkiezen die bij mijn tekendoel past"
 
 ## Beschrijving
-Ik was verder gegaan met de website waarmee ik bezig was tijdens de vorige sprint. Maar ik heb er nu voor gezorgd dat een paar van de filter opties werken. Ze zijn helaas niet allemaal gelukt, omdat er ergens wat mis ging in mijn code en ik nog even moet kijken wat de oplossing is. 
+Ik was verder gegaan met de website waarmee ik bezig was tijdens de vorige sprint. Ik heb ervoor gezorgd dat je de content van mijn pagina kunt filteren op categorie. Als je nu op een van de tekenmethode categorieën klikt word het allemaal gefilterd. Ik heb dit gedaan met JavaScript. 
 
-Maar ik ben wel blij dat er een paar gelukt zijn, omdat dit echt de eerste keer is dat ik veel met JavaScript heb gedaan
+Dit is voor mij niet het enige wat op mijn website werkt met JavaScript. Ik had eerder al een werkende "laad meer" button die meer content liet verschijnen op de site. Ik heb voor het filteren bijna dezelfde techniek gebruikt. 
+
 <img width="1790" alt="Screenshot 2023-01-09 at 11 52 24 PM" src="https://user-images.githubusercontent.com/106411511/211424294-3c58ea3b-3830-48a3-810a-ee239d669809.png">
 
 <img width="1480" alt="Screenshot 2023-01-09 at 11 52 52 PM" src="https://user-images.githubusercontent.com/106411511/211424354-2ca494d0-8de6-4a0e-ac36-8b2111c26c62.png">
