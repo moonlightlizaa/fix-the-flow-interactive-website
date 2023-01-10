@@ -113,6 +113,9 @@
   grid:
     ". c1 c1 c1 ." 1fr
     / 260px 1fr 1fr 1fr 260px;
+
+  background: #f7f7f7;
+  height: 350px;
 }
 
 .tekenmethodes {
@@ -121,7 +124,7 @@
 
 h1 {
   font-family: var(--vtPrimaryFont);
-  font-style: normal;
+
   font-weight: 800;
   font-size: 63px;
   line-height: 44px;
@@ -134,7 +137,7 @@ h1 {
   top: 245px;
 
   font-family: var(--vtSecondaryFont);
-  font-style: normal;
+
   font-weight: 400;
   font-size: 20px;
   line-height: 22px;
